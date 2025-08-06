@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "🔐 GitHub 手动上传指南"
+echo "========================"
+echo ""
+echo "由于认证问题，请按以下步骤手动上传："
+echo ""
+echo "1. 在 GitHub 上创建 Personal Access Token:"
+echo "   - 访问 https://github.com/settings/tokens"
+echo "   - 点击 'Generate new token (classic)'"
+echo "   - 勾选 'repo' 权限"
+echo "   - 复制生成的 token"
+echo ""
+echo "2. 使用以下命令推送（将 YOUR_TOKEN 替换为实际 token）:"
+echo "   git remote set-url origin https://YOUR_TOKEN@github.com/xuanyue2019/prismrag.git"
+echo "   git push -u origin main"
+echo ""
+echo "3. 或者使用用户名和 token:"
+echo "   当 Git 提示输入密码时，输入你的 Personal Access Token（不是密码）"
+echo ""
+echo "4. 确保在 GitHub 上已创建名为 'prismrag' 的仓库"
+echo ""
+echo "📋 当前项目状态:"
+git log --oneline -5
+echo ""
+echo "🔗 远程仓库:"
+git remote -v
