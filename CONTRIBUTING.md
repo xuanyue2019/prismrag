@@ -8,7 +8,7 @@
 
 如果您发现了 bug 或有功能建议，请：
 
-1. 检查 [Issues](https://github.com/yourusername/prismrag/issues) 确保问题尚未被报告
+1. 检查 [Issues](https://github.com/xuanyue2019/prismrag/issues) 确保问题尚未被报告
 2. 创建新的 Issue，包含：
    - 清晰的标题和描述
    - 重现步骤（如果是 bug）
@@ -21,7 +21,7 @@
 1. **Fork 项目**
    ```bash
    # 在 GitHub 上 fork 项目，然后克隆到本地
-   git clone https://github.com/yourusername/prismrag.git
+   git clone https://github.com/xuanyue2019/prismrag.git
    cd prismrag
    ```
 
@@ -127,7 +127,7 @@
 如果您需要帮助：
 
 1. 查看 [文档](docs/)
-2. 搜索现有的 [Issues](https://github.com/yourusername/prismrag/issues)
+2. 搜索现有的 [Issues](https://github.com/xuanyue2019/prismrag/issues)
 3. 创建新的 Issue 寻求帮助
 
 感谢您的贡献！

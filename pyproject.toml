@@ -69,10 +69,10 @@ docs = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/prismrag"
-Repository = "https://github.com/yourusername/prismrag"
-Documentation = "https://github.com/yourusername/prismrag/blob/main/docs/"
-"Bug Tracker" = "https://github.com/yourusername/prismrag/issues"
+Homepage = "https://github.com/xuanyue2019/prismrag"
+Repository = "https://github.com/xuanyue2019/prismrag"
+Documentation = "https://github.com/xuanyue2019/prismrag/blob/main/docs/"
+"Bug Tracker" = "https://github.com/xuanyue2019/prismrag/issues"
 
 [project.scripts]
 prismrag-demo = "demo:main"
