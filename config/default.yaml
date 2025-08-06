@@ -1,0 +1,86 @@
+# PrismRAG Configuration
+
+# Model settings
+model:
+  base_model: "meta-llama/Llama-3.1-70b-instruct"
+  max_length: 4096
+  temperature: 1.0
+  top_p: 0.9
+
+# Training settings
+training:
+  learning_rate: 1e-5
+  batch_size: 4
+  gradient_accumulation_steps: 8
+  num_epochs: 3
+  warmup_steps: 100
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  save_steps: 500
+  eval_steps: 500
+  logging_steps: 100
+
+# Data generation settings
+data_generation:
+  # Distractor generation
+  distractor:
+    max_iterations: 5
+    quality_threshold: 4
+    batch_size: 16
+    
+  # Strategic CoT generation  
+  strategic_cot:
+    max_iterations: 10
+    random_attempts: 6
+    quality_threshold: 4
+    batch_size: 8
+
+# Data sources
+data_sources:
+  wikipedia:
+    num_pages: 10000
+    min_words: 500
+    max_words: 7000
+    min_lines: 10
+    max_lines: 1000
+    chunk_size_min: 250
+    chunk_size_max: 1000
+    
+  web_search:
+    max_pages_per_query: 10
+    max_words_per_page: 3000
+
+# Evaluation settings
+evaluation:
+  benchmarks:
+    - "crag"
+    - "covidqa" 
+    - "delucionqa"
+    - "emanual"
+    - "expertqa"
+    - "finqa"
+    - "hagrid"
+    - "hotpotqa"
+    - "ms_marco"
+    - "pubmedqa"
+    - "tatqa"
+    - "techqa"
+  
+  metrics:
+    - "factuality_score"
+    - "accuracy"
+    - "hallucination_rate"
+    - "missing_rate"
+
+# Paths
+paths:
+  data_dir: "data"
+  model_dir: "models"
+  output_dir: "outputs"
+  cache_dir: "cache"
+  
+# Logging
+logging:
+  level: "INFO"
+  use_wandb: true
+  project_name: "prismrag"
